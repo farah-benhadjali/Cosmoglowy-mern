@@ -1,0 +1,20 @@
+.primary {
+    color: #FF4F9D !important;
+}
+
+.text-primary {
+    color: #FF4F9D !important;
+}
+
+.bg-primary {
+    background-color: #FF4F9D !important;
+}
+
+.btn {
+    background-color: #FF4F9D !important;
+    border-color: #FF4F9D !important;
+}
+
+.nav-item.nav-link.active {
+    color: #FF4F9D;
+}
