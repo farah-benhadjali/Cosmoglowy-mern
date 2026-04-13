@@ -23,7 +23,6 @@ exports.verifyEmail = async (req, res) => {
       client.isVerified = true;
       await client.save();
       return res.status(200).send('Your account has been successfully verified');
-      //res.redirect("http://localhost:4200/login");
       console.log("email verified");
     } else {
       console.log("email is not verified");

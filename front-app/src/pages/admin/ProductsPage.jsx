@@ -9,7 +9,7 @@ import {InputIcon} from 'primereact/inputicon';
 import {ProductsService} from "../../services/admin/ProductsService";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEdit} from "@fortawesome/free-regular-svg-icons";
-import {faExpand, faTrash, faXmark} from "@fortawesome/free-solid-svg-icons";
+import {faExpand, faTrash} from "@fortawesome/free-solid-svg-icons";
 import {Dialog} from "primereact/dialog";
 import {InputNumber} from "primereact/inputnumber";
 import {FileUpload} from "primereact/fileupload";
@@ -110,9 +110,9 @@ export const ProductsPage = () => {
         setAddProductDialogVisible(false);
     }
     const handleDelete = async (rowData) => {
-        await ProductsService.deleteProduct(rowData.id);
-        setDeleteDialogVisible(false);
-    }
+        const updatedProducts = products.filter(product => product.id !== rowData.id);
+        setProducts(updatedProducts);
+      };
     const onUpload = () => {
         toast.current.show({severity: 'info', summary: 'Success', detail: 'File Uploaded'});
     };

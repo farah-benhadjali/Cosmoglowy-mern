@@ -7,7 +7,7 @@ export class UserService {
             adress: "Nabeul, Tunisia",
             tel: "+216 22 222 222",
             profilePic: "https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg",
-            role: "Client",
+            role: "User",
             emailToken: "",
             isVerified: ""
         }
@@ -20,6 +20,8 @@ export class UserService {
             email: "parfemeriebeaute@gmail.com",
             profilePic: "https://images.pexels.com/photos/1898555/pexels-photo-1898555.jpeg",
             role: "Admin",
+            emailToken: "",
+            isVerified: ""
         }
     }
 }

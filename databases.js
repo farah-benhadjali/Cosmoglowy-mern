@@ -1,5 +1,4 @@
 //mongoose crée une connecion entre mangodb et express
-const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://farahbenhadjali:farah123@cluster0.c9xhqio.mongodb.net/BeautyStorePfa')
-.then(db => console.log("database connected"))
-.catch(console.error());
+//mongoose crée une connection entre mangodb et express
+require('dotenv').config()
+mongoose.connect(process.env.MONGO_URI)

@@ -1,3 +1,4 @@
+import axios from 'axios';
 export class ProductService {
     static get4Products = async () => {
         return [
@@ -103,3 +104,4 @@ export class ProductService {
         return (await ProductService.getProducts()).find(p => p.id === id);
     }
 }
+export default ProductService;

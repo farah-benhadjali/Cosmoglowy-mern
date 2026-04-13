@@ -28,15 +28,13 @@ exports.saveProduit = async (req, res) => {
 
 //select all
   exports.getproduitlists =async (req, res) => {
-    Product.find({}).populate("souscategory").populate("category")
-        .then((lists) => {
-            res.status(200).send(lists);
-        })
-        .catch((error) => {
-            console.log(error);
-            res.status(500);
-        });
-   };
+    try {
+      const products = await Product.find().populate('category souscategory');
+      res.json(products);
+    } catch (error) {
+      res.status(500).json({ message: error.message });
+    }
+  };
 
 //select par id
   exports.getByid= (req, res) => {

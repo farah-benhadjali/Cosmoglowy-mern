@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
     },
     role: {
         type: String,
-        default: Role.Admin
+        default: Role.Client
     }
 });
 //bech ynajem ya9ra l user

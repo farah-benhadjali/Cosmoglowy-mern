@@ -12,6 +12,7 @@ import {faExpand, faTrash} from "@fortawesome/free-solid-svg-icons";
 import {faEdit} from "@fortawesome/free-regular-svg-icons";
 import {CategoryService} from "../../services/admin/CategoryService";
 import {Chips} from "primereact/chips";
+import { Axios  } from "axios";
 
 export const CategoryPage = () => {
     const toast = useRef(null);
@@ -86,8 +87,8 @@ export const CategoryPage = () => {
     };
 
     const handleDelete = async (rowData) => {
-        await CategoryService.deleteCategory(rowData.id);
-        setDeleteDialogVisible(false);
+        const updatedProducts = categories.filter(category => category.id !== rowData.id);
+        setCategories(updatedProducts);
     }
 
     const handleChangeSubCategory = (e) => {

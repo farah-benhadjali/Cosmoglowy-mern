@@ -21,6 +21,7 @@ import {ReclamationPage} from "./pages/admin/ReclamationPage";
 import {ClientPage} from "./pages/admin/ClientPage";
 import {OrdersPage} from "./pages/user/OrdersPage";
 import {ClientOrdersPage} from "./pages/admin/ClientOrdersPage";
+import AddProductPage from './pages/admin/AddProductPage';
 
 function App() {
     return (
@@ -53,6 +54,7 @@ function App() {
                     <Route path="reclamations" element={<ReclamationPage/>}/>
                     <Route path="clients" element={<ClientPage/>}/>
                     <Route path="orders" element={<ClientOrdersPage/>}/>
+                    <Route path="add-product" component={AddProductPage} />
                     <Route path='*' element={<NotFoundPage/>}/>
                 </Route>
             </Routes>
