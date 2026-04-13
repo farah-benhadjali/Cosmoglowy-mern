@@ -14,8 +14,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-FF5722?style=for-the-badge)](https://cosmo-glowy.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/farah-benhadjali/Cosmoglowy-mern
-
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/farah-benhadjali/Cosmoglowy-mern)
 </div>
 
 ---
